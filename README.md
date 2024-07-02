@@ -7,7 +7,9 @@ the docker images were not updated)
 Base image chosen from newest Debian listed on https://hub.docker.com/_/node as of 2023-07-03 supporting node16 (which
 is what the official newman Dockerfile uses).
 
-In addition to the GitHub Action automatically building and pushing to the GitHub repository, I have also used the following to build and publish to DockerHub.
+In addition to the GitHub Action automatically building and pushing to the GitHub docker repository (see [?tab=packages][?tab=packages] for details)
+
+, I have also used the following to build and publish to DockerHub.
 
 ```shell
 docker build -t traufst/newman-appudvikling .
