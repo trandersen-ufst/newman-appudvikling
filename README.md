@@ -14,6 +14,15 @@ docker build -t traufst/newman-appudvikling .
 docker push traufst/newman-appudvikling
 ```
 
+Note:  The image contains the "http-server" package so using it as the entrypoint allows for a simple webserver for test purposes.   See https://github.com/http-party/http-server for details.
+
+```shell
+docker build -t x .
+docker run -it -p 8080:8080 --entrypoint=http-server x
+```
+
+now has "Hello World" on http://localhost:8080/hello-world.txt
+
 Links:
 
 * Newman:  https://github.com/postmanlabs/newman/blob/develop/README.md
