@@ -6,4 +6,4 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y locales 
 RUN npm install -g newman
 RUN npm install -g http-server
 RUN npm install -g newman-reporter-htmlextra newman-reporter-junitfull xunit-viewer
-RUN mkdir public && echo "Hello World" > public/hello-world.txt
+RUN mkdir public && echo "Hello World!" > public/hello-world.txt
